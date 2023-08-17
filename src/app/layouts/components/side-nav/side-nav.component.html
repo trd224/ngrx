@@ -1,0 +1,8 @@
+<div class="sideNav">
+    <ul>
+        <li *ngFor="let item of navData; let first = first;"  [ngClass]="{'first': first}" (click)="menuToggle()">
+            <a routerLink="{{item.link}}" routerLinkActive="active">{{item.name}} </a>
+        </li>
+        
+    </ul>
+</div>
